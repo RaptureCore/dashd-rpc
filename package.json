@@ -1,6 +1,6 @@
 {
-  "name": "@dashevo/dashd-rpc",
-  "description": "Dash Client Library to connect to Dash Core via RPC",
+  "name": "raptured-rpc",
+  "description": "RAPTURE Client Library to connect to RAPTURE Core via RPC",
   "version": "1.0.1",
   "author": {
     "name": "Stephen Pair",
@@ -8,33 +8,19 @@
   },
   "contributors": [
     {
-      "name": "Jeff Garzik",
-      "email": "jgarzik@bitpay.com"
+      "name": "RaptureCore Dev"
     },
     {
-      "name": "Manuel Araoz",
-      "email": "manuelaraoz@gmail.com"
-    },
-    {
-      "name": "Matias Alejo Garcia",
-      "email": "ematiu@gmail.com"
-    },
-    {
-      "name": "Braydon Fuller",
-      "email": "braydon@bitpay.com"
-    },
-    {
-      "name": "Alex Werner",
-      "email": "alex.werner@dash.org"
+      "name": "tom_ua"
     }
   ],
   "keywords": [
-    "dash",
+    "rapture",
     "rpc"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/dashevo/bitcoind-rpc-dash"
+    "url": "https://github.com/RaptureCore/raptured-rpc"
   },
   "license": "MIT",
   "main": "lib/index.js",
@@ -54,7 +40,7 @@
     "sinon": "^1.12.2"
   },
   "bugs": {
-    "url": "https://github.com/dashevo/bitcoind-rpc-dash/issues"
+    "url": "https://github.com/RaptureCore/raptured-rpc/issues"
   },
-  "homepage": "https://github.com/dashevo/bitcoind-rpc-dash"
+  "homepage": "https://github.com/RaptureCore/raptured-rpc"
 }
