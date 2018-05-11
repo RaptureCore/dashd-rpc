@@ -1,10 +1,6 @@
 bitcoind-rpc-rapture.js
 ===============
 
-[![NPM Package](https://img.shields.io/npm/v/bitcoind-rpc-rapture.svg?style=flat-square)](https://www.npmjs.org/package/bitcoind-rpc-rapture)
-[![Build Status](https://img.shields.io/travis/dashpay/bitcoind-rpc-dash.svg?branch=master&style=flat-square)](https://travis-ci.org/dashpay/bitcoind-rpc-dash)
-[![Coverage Status](https://img.shields.io/coveralls/dashpay/bitcoind-rpc-dash.svg?style=flat-square)](https://coveralls.io/r/dashpay/bitcoind-rpc-dash?branch=master)
-
 A client library to connect to RAPTURE Core RPC in JavaScript.
 
 ## Get Started
