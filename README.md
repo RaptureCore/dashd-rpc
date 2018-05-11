@@ -1,18 +1,18 @@
-bitcoind-rpc-dash.js
+bitcoind-rpc-rapture.js
 ===============
 
-[![NPM Package](https://img.shields.io/npm/v/bitcoind-rpc-dash.svg?style=flat-square)](https://www.npmjs.org/package/bitcoind-rpc-dash)
+[![NPM Package](https://img.shields.io/npm/v/bitcoind-rpc-rapture.svg?style=flat-square)](https://www.npmjs.org/package/bitcoind-rpc-rapture)
 [![Build Status](https://img.shields.io/travis/dashpay/bitcoind-rpc-dash.svg?branch=master&style=flat-square)](https://travis-ci.org/dashpay/bitcoind-rpc-dash)
 [![Coverage Status](https://img.shields.io/coveralls/dashpay/bitcoind-rpc-dash.svg?style=flat-square)](https://coveralls.io/r/dashpay/bitcoind-rpc-dash?branch=master)
 
-A client library to connect to Dash Core RPC in JavaScript.
+A client library to connect to RAPTURE Core RPC in JavaScript.
 
 ## Get Started
 
-bitcoind-rpc-dash.js runs on [node](http://nodejs.org/), and can be installed via [npm](https://npmjs.org/):
+bitcoind-rpc-rapture.js runs on [node](http://nodejs.org/), and can be installed via [npm](https://npmjs.org/):
 
 ```bash
-npm install bitcoind-rpc-dash
+npm install bitcoind-rpc-rapture
 ```
 
 ## RpcClient
@@ -27,8 +27,8 @@ Config parameters :
 
 Promise vs callback based
 
-  - `require('bitcoind-rpc-dash/promise')` to have promises returned
-  - `require('bitcoind-rpc-dash')` to have callback functions returned
+  - `require('bitcoind-rpc-rapture/promise')` to have promises returned
+  - `require('bitcoind-rpc-rapture')` to have callback functions returned
 	
 ## Examples
 
@@ -36,7 +36,7 @@ Config:
 ```javascript
 var config = {
     protocol: 'http',
-    user: 'dash',
+    user: 'rapture',
     pass: 'local321',
     host: '127.0.0.1',
     port: 19998
@@ -45,7 +45,7 @@ var config = {
 
 Promise based:
 ```javascript
-var RpcClient = require('bitcoind-rpc-dash/promise');
+var RpcClient = require('bitcoind-rpc-rapture/promise');
 var rpc = new RpcClient(config);
 
 rpc.getRawMemPool()
@@ -67,7 +67,7 @@ Callback based (legacy):
 ```javascript
 var run = function() {
   var bitcore = require('bitcore');
-  var RpcClient = require('bitcoind-rpc-dash');
+  var RpcClient = require('bitcoind-rpc-rapture');
   var rpc = new RpcClient(config);
 
   var txids = [];
@@ -112,10 +112,10 @@ var run = function() {
 
 You can dynamically access to the help of each method by doing
 ```
-const RpcClient = require('bitcoind-rpc-dash');
+const RpcClient = require('bitcoind-rpc-rapture');
 var client = new RPCclient({
     protocol:'http',
-    user: 'dash',
+    user: 'rapture',
     pass: 'local321', 
     host: '127.0.0.1', 
     port: 19998
