@@ -131,4 +131,4 @@ client.help('getinfo',cb); //Get help of specific method
 
 **Code released under [the MIT license](https://github.com/bitpay/bitcore/blob/master/LICENSE).**
 
-Copyright 2013-2014 BitPay, Inc.
+Copyright 2013-2018 BitPay, Inc.
