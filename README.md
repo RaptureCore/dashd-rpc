@@ -1,14 +1,14 @@
-bitcoind-rpc-rapture.js
+raptured-rpc.js
 ===============
 
 A client library to connect to RAPTURE Core RPC in JavaScript.
 
 ## Get Started
 
-bitcoind-rpc-rapture.js runs on [node](http://nodejs.org/), and can be installed via [npm](https://npmjs.org/):
+raptured-rpc.js runs on [node](http://nodejs.org/), and can be installed via [npm](https://npmjs.org/):
 
 ```bash
-npm install bitcoind-rpc-rapture
+npm install raptured-rpc
 ```
 
 ## RpcClient
@@ -19,12 +19,12 @@ Config parameters :
 	- user : (string - optional) - (default: 'user') - Set the user credential.
 	- pass : (string - optional) - (default: 'pass') - Set the password credential.
 	- host : (string - optional) - (default: '127.0.0.1') - The host you want to connect with.
-	- port : (integer - optional) - (default: 9998) - Set the port on which perform the RPC command.
+	- port : (integer - optional) - (default: 14776) - Set the port on which perform the RPC command.
 
 Promise vs callback based
 
-  - `require('bitcoind-rpc-rapture/promise')` to have promises returned
-  - `require('bitcoind-rpc-rapture')` to have callback functions returned
+  - `require('raptured-rpc/promise')` to have promises returned
+  - `require('raptured-rpc')` to have callback functions returned
 	
 ## Examples
 
@@ -35,13 +35,13 @@ var config = {
     user: 'rapture',
     pass: 'local321',
     host: '127.0.0.1',
-    port: 19998
+    port: 14776
 };
 ```
 
 Promise based:
 ```javascript
-var RpcClient = require('bitcoind-rpc-rapture/promise');
+var RpcClient = require('raptured-rpc/promise');
 var rpc = new RpcClient(config);
 
 rpc.getRawMemPool()
@@ -63,7 +63,7 @@ Callback based (legacy):
 ```javascript
 var run = function() {
   var bitcore = require('bitcore');
-  var RpcClient = require('bitcoind-rpc-rapture');
+  var RpcClient = require('raptured-rpc');
   var rpc = new RpcClient(config);
 
   var txids = [];
@@ -108,7 +108,7 @@ var run = function() {
 
 You can dynamically access to the help of each method by doing
 ```
-const RpcClient = require('bitcoind-rpc-rapture');
+const RpcClient = require('raptured-rpc');
 var client = new RPCclient({
     protocol:'http',
     user: 'rapture',
